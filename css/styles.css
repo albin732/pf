@@ -21,6 +21,14 @@ body{
   margin: 0;
   padding: 0;
 }
+.row{ 
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+
+
 .nav-div{
     background-color: var(--cl-2);
     min-height: 760px;
@@ -102,7 +110,7 @@ body{
 
 .content-section1{
     /* height: 800px; */
-    background-color: var(--cl-6);
+    background-color: rgb(187, 230, 230);
 }
 .content-section2{
     /* height: 800px; */
@@ -111,7 +119,7 @@ body{
 
 .content-section3{
     /* height: 800px; */
-    background-color: var(--cl-6);
+    background-color:#6b7a808a;
 }
 .footer-section{
     /* height: 200px; */
@@ -129,6 +137,13 @@ body{
   /* float: left; */
   /* padding-left: 2rem;
   font-size: 16px; */
+}
+
+@media(max-width:768px)
+{
+  .skills-head{
+    padding-left: 4rem;
+  }
 }
 
 
@@ -224,7 +239,7 @@ margin-top: 40%;
   width: 80%;
   line-height: .7;
 }
-input[type="text"], textarea[type="text"] {
+input[type="text"], textarea[type="text"], input[type="email"], input[type="tel"] {
 
   background-color : #d1d1d1; 
 
@@ -399,16 +414,27 @@ div.cont_cont {order: 1;}
   padding-bottom: 3rem;
   width: 90%;
 }
+#timeline  h3{
+  font-size: 20px;
+  color: #000 ;
+}
+#timeline  p{
+  margin-left: 2rem;
+  color: #000 ;
+}
 
 @media(min-width:768px){
   #timeline{
     padding-left: 10%;
   }
 }
-#timeline > h3{
-  color: #000 ;
+
+.footer-common{
+  padding-left: 10%;
 }
-#timeline > p{
-  margin-left: 2rem;
-  color: #000 ;
+@media(max-width:768px)
+{
+  .footer-common{
+    padding-bottom: 10%;
+    }
 }
