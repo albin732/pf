@@ -41,10 +41,8 @@
           </div>
         </div>
         <div class="container">
-          <div class="">
+          <div class="row">
             <div class="col-lg-12  text-center">
-
-              <!-- <h1 class="animated zoomInDown pf-name" style="animation-delay:1s">albin geo</h1> -->
               <div>
                 <h1 class="ml11">
                   <span class="text-wrapper">
@@ -79,7 +77,7 @@
 
 
   <section class="content-section1">
-    <div class="">
+    <div class="row">
 
       <div class="col-md-6 why-top">
         <div class="card p-4">
@@ -140,12 +138,7 @@
         </div>
       </div>
     </div>
-
-
   </section>
-
-
-
 
   <section class="content-section2 m-4">
     <div class="container">
@@ -172,8 +165,8 @@
 
 
             <div class=" justify-content-around mb-3 ">
-              <div class="skills-head">
-                <h5 style="font-weight: 400;">Works with :</h5>
+              <div class="skills-head padding-left:25%">
+                <h5 style="font-weight:400;">Works with :</h5>
               </div>
               <div class="skills text-center">
                 <p style="font-weight: 300;">C, C++, C#, Vb, Python &nbsp; &nbsp;
@@ -240,7 +233,8 @@
                 <p class="card-text">
                   For stand-alone application on a desktop we can go for <span>C# windows
                     application</span> for
-                  traditional Windows desktop. We can customise applications for smplicity and performance in order to meet the client requirements.
+                  traditional Windows desktop. We can customise applications for smplicity and performance in order to
+                  meet the client requirements.
                 </p>
               </div>
             </div>
@@ -257,20 +251,10 @@
     </div>
   </section>
 
-
-
-
-
-
-
-
-
-
-
   <section class="content-section3 ">
     <div id="timeline" class="container">
       <div class="col-md-12">
-        <h3>Timeline</h3>
+        <h2>Timeline</h2>
         <br>
 
         <h3>2020-Present</h3>
@@ -303,49 +287,78 @@
     </div>
   </section>
 
+
   <footer class="footer-section">
-    <div class="">
-      <div class="col-md-4 footer-font-sm text-light pt-4"
-        style="padding-left: 5%;padding-right: 5%; line-height: 1; font-family: baloo;">
-        <h4>about me</h4><br>
-        <h6><strong>Hai,</strong>I'm albin.I resides at Kozhikode Kerala. Currently i'm searching for a fulltime job in the area of software development.</h6>
-        <h6></h6>
-      </div>
-      <div class="col-md-4 text-light footer-font-sm" style="padding-top: 2%;padding-left: 5%;line-height: 1;">
-        <h4>get me here</h4><br>
-        <h6>connectalbin@gmail.com</h6>
-        <h6>WhatsApp 9048501350</h6>
+    <div class="row pt-4 text-light">
+      <div class="col-md-4 footer-common">
+
+        <div class="">
+          <h4>About me</h4>
+          <h6><strong>Hai,</strong>I'm albin.I resides at Kozhikode Kerala. Currently i'm searching for a fulltime job
+            in software development.</h6>
+
+        </div>
+
+        <div class="" style="padding-top: 15%;">
+
+          <!--Facebook-->
+          <a class="btn-floating btn-lg btn-fb text-light" href="https://www.facebook.com/albin.geo.5" type="button"
+            role="button"><i class="fab fa-facebook-square"></i></a>
+          <!--Linkedin-->
+          <a class="btn-floating btn-lg btn-li text-light" href="https://www.linkedin.com/in/albin-geo-2070b81b9/"
+            type="button" role="button"><i class="fab fa-linkedin-in"></i></a>
+          <!--Youtube-->
+          <a class="btn-floating btn-lg btn-yt text-light" type="button" role="button"><i
+              class="fab fa-youtube-square"></i></a>
+        </div>
       </div>
 
+      <div class="col-md-4 footer-common">
+        <div>
+          <h4>Get me here</h4>
+          <h6>connectalbin@gmail.com</h6>
+          <h6>WhatsApp 9048501350</h6>
+        </div>
+        <div style="padding-top: 15%;">
+          <h5>View Count</h5>
+          <div id="visits" style="font-size: 20px; padding-left: 10%;">0</div>
+        </div>
+      </div>
 
-      <div class="col-md-4" style="padding-left: 5%;padding-right: 5%; line-height: 1; font-family: baloo;">
-        <h4 class="text-light pt-4">Interested in hiring me?</h4>
-        <form>
+      <div class="col-md-4 footer-common">
+        <h4 class="text-light">Interested in hiring me?</h4>
+        <form id="contact-form" action="">
           <div class="form-row footer-font-sm">
             <div class="form-group col-md-12">
-              <label for="FormName">Email/Phone</label>
-              <input type="text" class="form-control" id="FormName" placeholder="Email/Phone" readonly="true">
+              <input type="text" class="form-control" name="name" id="fullName" required placeholder="Full Name">
+            </div>
+            <div class="form-group col-md-12">
+              <input type="tel" class="form-control" id="phone" name="phone" size="20" minlength="10" maxlength="14"
+                required placeholder="Phone">
+            </div>
+            <div class="form-group col-md-12">
+              <input type="email" class="form-control" name="email" id="emailId" required placeholder="Email">
             </div>
 
             <div class="form-group col-md-12">
-              <label for="FormMessage">Message</label>
-              <textarea type="text" class="form-control" id="FormMessage" style="line-height: normal;" rows="4"
-                cols="10" placeholder="Message" readonly="true"></textarea>
+              <textarea type="text" class="form-control" name="message" id="message" required
+                style="line-height: normal;" rows="4" cols="10" placeholder="Message"></textarea>
             </div>
+
+            <input type="text" class="form-control" name="ipaddress" id="ipaddress" placeholder="Phone" hidden="true">
           </div>
           <div class="form-group ">
-            <!-- <button type="submit" class="btn btn-light">Submit</button> -->
+            <button type="submit" class="btn btn-light">Submit</button>
           </div>
         </form>
       </div>
 
-      <div class="clo-md-12 footnote text-light  text-center py-4" style="width: 100%;">
-        <hr style="border-style: solid;border-width: 2px;width: 90%;color: var(--cl-3);">
-        <span>albin geo</span><span class="highlight">©2020</span>
-
-      </div>
+    </div>
 
 
+    <div class="clo-md-12 footnote text-light  text-center py-4" style="width: 100%;">
+      <hr style="border-style: solid;border-width: 2px;width: 90%;color: var(--cl-3);">
+      <span>albin geo©</span><span class="highlight" id="current-year"></span>
 
     </div>
   </footer>
@@ -360,8 +373,47 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
   <!-- Material Design Bootstrap -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.16.0/css/mdb.min.css" rel="stylesheet">
+  <!-- common scrypt -->
   <script src="js/script.js"></script>
 
+
+
+  <script>
+    $(document).ready(function () {
+
+      // current year at footer
+      document.getElementById("current-year").innerHTML = new Date().getFullYear();
+
+      // client ip Address
+      $.get("https://ipinfo.io", function (response) {
+        document.getElementById("ipaddress").value = response.ip;
+      }, "json");
+
+      // visit count
+      $.getJSON("https://api.countapi.xyz/update/albin-pf/bfdc7e0a-e7cd-4421-a514-a87ea1763961/?amount=1", function (response) {
+        $("#visits").text(response.value.toString().padStart(5, "0"));
+      });
+
+      // form submit 
+      $("#contact-form").submit((e) => {
+        e.preventDefault()
+        $.ajax({
+          url: "https://script.google.com/macros/s/AKfycby2pyPCW9zuWjdF_Bgn8UYkX7lBUAI257J_R53uzctxcjZ35eIb/exec",
+          data: $("#contact-form").serialize(),
+          method: "post",
+          success: function (response) {
+            alert("Form submitted successfully")
+            document.getElementById("contact-form").reset();
+          },
+          error: function (err) {
+            alert("Error, Try Again")
+
+          }
+        })
+      })
+
+    })
+  </script>
 
 </body>
 
